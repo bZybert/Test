@@ -1,0 +1,36 @@
+<form class="form-inline mt-2" #registerForm="ngForm" (ngSubmit)="register()">
+  <div class="form-group mr-2">
+    <input
+      type="text"
+      class="form-control"
+      name="name"
+      [(ngModel)]="model.name"
+      required
+      placeholder="Name"
+    />
+  </div>
+
+  <div class="form-group mr-2">
+    <input
+      type="text"
+      class="form-control"
+      name="surname"
+      [(ngModel)]="model.surname"
+      required
+      placeholder="Surname"
+    />
+  </div>
+
+  <div class="form-group mr-2">
+    <input
+      type="text"
+      class="form-control"
+      name="birthDate"
+      [(ngModel)]="model.birthDate"
+      required
+      placeholder="Birth of date"
+    />
+  </div>
+
+  <div><button class="btn btn-success" type="submit">Save</button></div>
+</form>
